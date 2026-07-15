@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "yd bdllh mHmd mHmd",
+"features": [
+{ "type": "Feature", "properties": { "Name": "عيد عبدالله محمد محمد" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 30.6241298, 25.2356692, 0.0 ], [ 30.6240403, 25.2356343, 0.0 ], [ 30.6241178, 25.235467, 0.0 ], [ 30.6242088, 25.2354998, 0.0 ], [ 30.6241298, 25.2356692, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "1" }, "geometry": { "type": "Point", "coordinates": [ 30.624127, 25.2355667, 0.0 ] } }
+]
+}
