@@ -1,4 +1,0 @@
-{
-  "type" : "FeatureCollection",
-  "features" : [{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[30.539277899476716,25.443510951874963]},"properties":{"OBJECTID":7,"Name":"reducer","code":"73"}},{"type":"Feature","id":20,"geometry":{"type":"Point","coordinates":[30.541358018576549,25.443431800182875]},"properties":{"OBJECTID":20,"Name":"reducer","code":"73"}},{"type":"Feature","id":27,"geometry":{"type":"Point","coordinates":[30.542853515060944,25.443224216616816]},"properties":{"OBJECTID":27,"Name":"reducer","code":"73"}},{"type":"Feature","id":28,"geometry":{"type":"Point","coordinates":[30.542852629958706,25.443292441184095]},"properties":{"OBJECTID":28,"Name":"reducer","code":"73"}}]
-}

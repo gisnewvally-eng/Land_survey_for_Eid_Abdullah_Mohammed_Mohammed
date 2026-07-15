@@ -1,4 +1,0 @@
-{
-  "type" : "FeatureCollection",
-  "features" : [{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[30.541526199000032,25.443436865000024]},"properties":{"OBJECTID":7,"Name":"محول كهرباء","code":"49","discription":"قدرة 263k"}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[30.540746077000051,25.441229190000058]},"properties":{"OBJECTID":8,"Name":"محول كهرباء","code":"49","discription":"مغذي الساحة - قدرة 263k "}},{"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[30.543034958000078,25.441203706000067]},"properties":{"OBJECTID":9,"Name":"محول كهرباء","code":"49","discription":"مغذي مدرسة الثانوية بنات - قدرة 263k "}}]
-}

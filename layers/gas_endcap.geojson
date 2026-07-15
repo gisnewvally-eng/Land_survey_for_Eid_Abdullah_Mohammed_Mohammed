@@ -1,4 +1,0 @@
-{
-  "type" : "FeatureCollection",
-  "features" : [{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[30.542840720240555,25.442069951981519]},"properties":{"OBJECTID":10,"Name":"end cap","code":"72"}}]
-}
