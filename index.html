@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-<title>خريطة المنطقة 10 -ميدان الساحة الشعبية- محافظة الوادي الجديد</title>
+<title>خريطة رفع مساحي -عيد عبدالله محمد محمد- محافظة الوادي الجديد</title>
 <link rel="icon" type="image/png" href="logo.png" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -364,7 +364,7 @@ body.dark-mode #map #northArrow {
   <!-- Header with logo on the right (RTL) -->
   <header id="header">
     <img src="logo.png" class="logo" alt="شعار">
-    <h1>خريطة المنطقة 10 -ميدان الساحة الشعبية- محافظة الوادي الجديد</h1>
+    <h1>خريطة رفع مساحي -عيد عبدالله محمد محمد- محافظة الوادي الجديد</h1>
   </header>
 
  <!-- أزرار القوائم والطباعة بجانب بعض -->
@@ -391,15 +391,15 @@ body.dark-mode #map #northArrow {
     <div class="sidebar-section">
       <h3>التحكم في المرافق</h3>
       <div class="controls">
-        <button id="showAll" class="show">عرض جميع المرافق</button>
-        <button id="hideAll" class="hide">إخفاء جميع المرافق</button>
+        <button id="showAll" class="show">عرض جميع الطبقات</button>
+        <button id="hideAll" class="hide">إخفاء جميع الطبقات</button>
         <button id="resetMap" class="reset">إعادة ضبط العرض</button>
       </div>
     </div>
 
     <!-- Layer groups -->
     <div class="sidebar-section">
-      <h3>قائمة المرافق</h3>
+      <h3>قائمة الطبقات</h3>
       <div id="layerGroups" aria-live="polite"></div>
     </div>
   </aside>
@@ -493,29 +493,8 @@ const icons = {
 //  ملفات الطبقات (GeoJSON داخل مجلد layers)
 // ----------------------------------
 const layersInfo = {
+  "منطقة الرفع": { file: "layers/عيد عبدالله محمد محمد.geojson", color: "#ffa647" },
 
-  "خطوط الكهرباء ⚡": { file: "layers/electricity_polylines.geojson", color: "#ff0000" },
-  "محولات الكهرباء ⚡": { file: "layers/electric_transformers.geojson", icon: icons.electric_trans },
-  "لوحات توزيع الكهرباء ⚡": { file: "layers/electric_distribution_panel.geojson", icon: icons.distribution_panel },
-
-
-  "خطوط الإنترنت 🌐": { file: "layers/landline_lines.geojson", color: "#00cc66" },
-  "غرف توزيع خطوط الإنترنت الرئيسية 🌐": { file: "layers/landline_manhole.geojson", icon: icons.manhole },
-  "غرف توزيع خطوط الإنترنت الفرعية 🌐": { file: "layers/landline_handhole.geojson", icon: icons.handhole },
-  "نقاط توزيع خطوط الإنترنت 🌐": { file: "layers/landline_distribution_cabinet.geojson", icon: icons.networking },
-
-  "خطوط المياه💧": { file: "layers/water_lines.geojson", color: "#007bff" },
-  "محابس المياه 🚰": { file: "layers/water_valve.geojson", icon: icons.water_valve },
-  " حنفية حريق 🚰": { file: "layers/fire_hydrant.geojson", icon: icons.fire_hydrant },
-  
-  "خطوط الصرف الصحي 🚽": { file: "layers/sewer_lines.geojson", color: "#800080" },
-  "غرف صرف صحي (مطابق) 💿": { file: "layers/sewer_manhole.geojson", icon: icons.sewer },
-  "غرف صرف صحي (تفتيش) 💿": { file: "layers/sewer_points_search.geojson", icon: icons.sewer_points_search },
-  
-
-  "خطوط الغاز ♨": { file: "layers/gas_lines.geojson", color: "#FF8C00" },
-  "مخفض الغاز ♨": { file: "layers/gas_reducer.geojson", icon: icons.gas_reducer_icon },
-  "النهايات المغلقة للغاز ♨": { file: "layers/gas_endcap.geojson", icon: icons.gas_end_icon }
 
 };
 
@@ -526,35 +505,7 @@ const layersInfo = {
 // ----------------------------------
 const groups = {
 
-  "الكهرباء ⚡": [
-    "خطوط الكهرباء ⚡",
-    "لوحات توزيع الكهرباء ⚡",
-    "محولات الكهرباء ⚡"
-  ],
-
-  "الإنترنت 🌐": [
-    "خطوط الإنترنت 🌐",
-    "غرف توزيع خطوط الإنترنت الرئيسية 🌐",
-    "نقاط توزيع خطوط الإنترنت 🌐"
-  ],
-
-  "المياه 💧🚰": [
-    "خطوط المياه💧",
-    "محابس المياه 🚰",
-    " حنفية حريق 🚰"
-  ],
-
-  "الصرف الصحي 💿🚽": [
-    "خطوط الصرف الصحي 🚽",
-    "غرف صرف صحي (مطابق) 💿",
-    "غرف صرف صحي (تفتيش) 💿"
-  ],
-
-  "الغاز ♨": [
-    "خطوط الغاز ♨",
-    "مخفض الغاز ♨",
-    "النهايات المغلقة للغاز ♨"
-  ],
+  "منطقة الرفع"
 
 };
 
