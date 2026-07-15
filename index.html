@@ -504,7 +504,6 @@ const layersInfo = {
 //  تقسيم الطبقات داخل القائمة الجانبية
 // ----------------------------------
 const groups = {
-
   "طبقات الرفع": [
     "منطقة الرفع"
   ]
@@ -548,9 +547,14 @@ for(const [name, info] of Object.entries(layersInfo)){
     return r.json();
   }).then(data=>{
     const layer = L.geoJSON(data, {
-      style: feat=>{
-        return {color: info.color || "#3388ff", weight:4, fillOpacity:0.7};
-      },
+      style: function(feature) {
+  return {
+    color: info.color || "#3388ff",
+    weight: 2,
+    fillColor: info.color || "#3388ff",
+    fillOpacity: 0.4
+  };
+},
       pointToLayer: (feat, latlng) => {
         if(info.icon) return L.marker(latlng, {icon: info.icon});
         // fallback for points: small circle marker
