@@ -1,0 +1,4 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[30.540472702000045,25.443496591000041]},"properties":{"OBJECTID":2,"Name":"حنفية حريق","code":"67","discription":null}}]
+}

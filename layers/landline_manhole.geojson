@@ -1,0 +1,4 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[30.542886099000043,25.442693287000054]},"properties":{"OID":1,"Name":"شامبر تليفونات","code":"31"}}]
+}

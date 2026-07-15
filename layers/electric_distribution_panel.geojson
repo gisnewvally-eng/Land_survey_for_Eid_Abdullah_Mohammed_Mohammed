@@ -1,0 +1,4 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[30.539973856271409,25.443670084903403]},"properties":{"OBJECTID":1,"code":"44","name":"كابينة توزيع"}}]
+}
